@@ -117,9 +117,97 @@
 
 
 #   Create a method that takes in an array of words and returns the word with the least number of characters.
+# strings = ["happy", "and", "cat", "apple", "at"]
+#
+# def short_word strings
+#   short = strings.min_by(&:length)
+#   p short
+# end
+# short_word(strings)
 
 #   Create a method that takes in an array of numbers and returns only the odd numbers sorted from least to greatest.
+# array = [1, 4, 6, 8, 3, 12]
+#
+# def odd array
+#   num_odd = array.select do |value|
+#     p value if value.odd?
+#   end
+# end
+# odd(array.sort)
+#
+# # OR
+# def odd_num (array)
+#   p array.select(&:odd?).sort
+# end
+# odd_num(array)
 
 #   Create a method that takes in an array of strings and returns all the strings in reverse casing. All uppercase letters should be returned lowercased and all lowercased letters should be returned in uppercase letters.
+# strings = ["Sit", "down", "Clown", "cat", "Computer"]
+#
+# def reverse_casing array
+#   reverse = array.map(&:swapcase)
+#   p reverse
+# end
+# reverse_casing(strings)
+
+
 #   Create a method that will take in an array of numbers and return an array with the remainder of each number when divided by 2.
+# array = [2, 4, 6, 3]
+#
+# def remainder array
+#   array.map do |value|
+#     p value % 2
+#   end
+# end
+# p remainder(array)
+
+
 #   Create a method that will take in a range of letters and return an array with all the letters capitalized.
+# letter_range = 'a'..'z'
+#
+# def char_up letter_range
+#   cap_letter = letter_range.map(&:upcase)
+#   p cap_letter
+# end
+# char_up(letter_range)
+
+# 🏔 Stretch Goals
+# FizzBuzz: Create a method that prints the numbers from 1 to 100. For multiples of three print Fizz instead of the number, for multiples of five print Buzz instead of the number, for numbers that are multiples of both three and five print FizzBuzz, for all other numbers print the number.
+# numbers = 1..100
+
+# def fizz_buzz numbers
+#     numbers.each do |value|
+#        if value % 3 == 0 && value % 5 == 0
+#         p 'fizzbuzz'
+#             elsif value % 5 == 0
+#                 p 'buzz'
+#             elsif value % 3 == 0
+#                 p 'fizz'
+#             else
+#                 p value
+#         end
+#     end
+# end
+# fizz_buzz(numbers)
+
+
+# Create a method that takes in an array of words and returns all the words that start with a particular letter. Example: Given the array ['Apple', 'Avocado', 'Banana', 'Mango'] and the letter 'a' the method should return ['Apple', 'Avocado']. With the same method, given the letter 'm' should return ['Mango'].
+# array = ['Apple', 'Avocado', 'Banana', 'Mango']
+
+# def search_letter array
+#     array.select do |value|
+#         value.downcase.include?('m')
+#     end
+# end
+# p search_letter(array)
+
+
+# Create a method that takes in an array of mixed data types and returns an array without any false, null, 0, or blank values.
+# mixed_array = [1, 2, nil, 'hello', 'banana', '', [], 0, false]
+
+# def filtered_array mixed_array
+#     mixed_array.reject do |value|
+#        value == nil || value == false || value == 0 || value == '' || value == []
+#     end
+# end
+# p filtered_array(mixed_array)
