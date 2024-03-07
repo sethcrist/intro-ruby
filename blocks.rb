@@ -193,10 +193,10 @@
 
 # Create a method that takes in an array of words and returns all the words that start with a particular letter. Example: Given the array ['Apple', 'Avocado', 'Banana', 'Mango'] and the letter 'a' the method should return ['Apple', 'Avocado']. With the same method, given the letter 'm' should return ['Mango'].
 # array = ['Apple', 'Avocado', 'Banana', 'Mango']
-
+#
 # def search_letter array
 #     array.select do |value|
-#         value.downcase.include?('m')
+#         value.downcase.include?('a')
 #     end
 # end
 # p search_letter(array)
