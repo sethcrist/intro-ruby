@@ -163,7 +163,7 @@ p dishes.update_status
 
 class ColorPalette
   attr_accessor :color1, :color2, :color3
-  def initialize(color1, color2, color#)
+  def initialize(color1, color2, color3)
     @color1 = color1
     @color2 = color2
     @color3 = color3
